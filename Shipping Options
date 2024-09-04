@@ -1,0 +1,31 @@
+#Determine the cheapest way to ship a package based on the three options: Ground Shipping, Ground Shipping Premium, Drone Shipping
+weight = 41.5
+# Ground Shipping
+cost_1= 1.5*weight+20.0
+cost_2= 3.0*weight+20.0
+cost_3= 4.0*weight+20.0
+cost_4= 4.75*weight+20.0
+if weight <= 2:
+  print("Ground Shipping Cost: $",cost_1)
+elif 2 < weight <= 6:
+    print("Ground Shipping Cost: $",cost_2)
+elif 6 < weight <= 10:
+    print("Ground Shipping Cost: $",cost_3)   
+elif weight > 10:
+    print("Ground Shipping Cost: $",cost_4)
+#Premium Ground Shipping
+cost_premium=125
+print("Premium Cost: $",cost_premium)
+#Drone Shipping
+cost_1D=4.5*weight
+cost_2D=9.0*weight
+cost_3D=12.0*weight
+cost_4D=14.25*weight
+if weight <= 2:
+  print("Drone Shipping Cost: $",cost_1D)
+elif 2 < weight <= 6:
+    print("Drone Shipping Cost: $",cost_2D)
+elif 6 < weight <= 10:
+    print("Drone Shipping Cost: $",cost_3D)   
+elif weight > 10:
+    print("Drone Shipping Cost: $",cost_4D)
